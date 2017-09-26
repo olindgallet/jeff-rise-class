@@ -10,9 +10,9 @@ To download, follow these steps in cloud 9 terminal:
 
 > cd pkmntui
 
-> wget -O https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/Pokemon.java
+> wget -O Pokemon.java https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/Pokemon.java
 
-> wget -O https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/Tui.java
+> wget -O Tui.java https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/Tui.java
 
 > c9 open *.java
 
