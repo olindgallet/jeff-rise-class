@@ -4,7 +4,7 @@ Introduction to programming with JAVA.  Making a pokemon game, different parts f
 
 # Project 1
 
-To download, follow these steps:
+To download, follow these steps in cloud 9 terminal:
 
 > mkdir pkmntui
 
@@ -13,6 +13,8 @@ To download, follow these steps:
 > wget -O https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/Pokemon.java
 
 > wget -O https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/Tui.java
+
+> c9 open *.java
 
 # Understand the code
 
