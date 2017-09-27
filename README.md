@@ -2,6 +2,11 @@
 
 Introduction to programming with JAVA.  Making a pokemon game, different parts for classes.
 
+# Install JAVA
+sudo apt-get update
+sudo apt-get install default-jdk
+
+
 # Project 1
 
 To download, follow these steps in cloud 9 terminal:
@@ -29,3 +34,21 @@ In this code, the program takes in a name for the pokemon from the user and disp
 -Have the two battle it out!  Put meaningful messages using each Pokemon's name and health, and remember to set health to a new value in battle.
 
 -BONUS Look in the JAVA API for Math.random.  Use this function to generate random values during combat.  Don't forget to import the library!
+
+# Project 2 (WIP)
+
+Cloud 9 doesn't have native support for the GUIs on JAVA.  To add it in, type/copy the following in the terminal:
+
+> cd ~
+
+> git clone https://github.com/acabey/cloud9-vnc.git
+
+> cd cloud9-vnc/
+
+> sudo apt-get update
+
+> sudo ./install.sh
+
+> reboot
+
+> c9vnc
