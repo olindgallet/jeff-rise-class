@@ -52,3 +52,30 @@ Cloud 9 doesn't have native support for the GUIs on JAVA.  To add it in, type/co
 > reboot
 
 > c9vnc
+
+TODO: Make a sample GUI for students to try out.
+
+# Project 3 (WIP)
+
+Let's make a webpage.  First, download a shell script to make the process easier.
+> cd ~
+
+> cd bin
+
+> wget -O buildapp.sh https://raw.githubusercontent.com/olindgallet/developerscripts/master/buildapp.sh
+
+> chmod +x buildapp.sh
+
+> sed -i 's/\r/\n/g' buildapp.sh 
+
+Make sure it works by typing this:
+
+> buildapp.sh
+
+An explanation of what it does should pop up.  If it doesn't let me know.  Now let's see the magic of shell scripts.
+
+> cd ~
+
+> cd workspace
+
+> buildapp myapp
