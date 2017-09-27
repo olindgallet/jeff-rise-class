@@ -21,11 +21,11 @@ To download, follow these steps in cloud 9 terminal:
 
 > c9 open *.java
 
-# Understand the code
+__Understand the code
 
 In this code, the program takes in a name for the pokemon from the user and displays the pokemon hitting itself until it gets to zero hp and faints.  Note that the program is made up of two JAVA files: the Tui (text user interface) and the Pokemon object.
 
-# What I want you to do
+__What I want you to do
 
 -Add in another Pokemon
 
