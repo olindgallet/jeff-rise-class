@@ -78,4 +78,4 @@ An explanation of what it does should pop up.  If it doesn't let me know.  Now l
 
 > cd workspace
 
-> buildapp myapp
+> buildapp.sh myapp
