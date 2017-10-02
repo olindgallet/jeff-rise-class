@@ -47,7 +47,7 @@ Download the updated code as follows
 
 > javac TuiUpdated.java
 
-> java TuiUpdated.java
+> java TuiUpdated
 
 Try the program for a few times.  What do you think can be improved upon in the code?  How would you add these changes to the existing code?
 
