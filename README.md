@@ -35,6 +35,22 @@ In this code, the program takes in a name for the pokemon from the user and disp
 
 -BONUS Look in the JAVA API for Math.random.  Use this function to generate random values during combat.  Don't forget to import the library!
 
+# Project 1.5
+
+## Get on the same page
+
+Download the updated code as follows
+
+> cd pkmntui
+
+> wget -O TuiUpdated.java https://raw.githubusercontent.com/olindgallet/jeff-rise-class/master/TuiUpdated.java
+
+> javac TuiUpdated.java
+
+> java TuiUpdated.java
+
+Try the program for a few times.  What do you think can be improved upon in the code?  How would you add these changes to the existing code?
+
 # Project 2 (WIP)
 
 Cloud 9 doesn't have native support for the GUIs on JAVA.  To add it in, type/copy the following in the terminal:
@@ -56,6 +72,8 @@ Cloud 9 doesn't have native support for the GUIs on JAVA.  To add it in, type/co
 TODO: Make a sample GUI for students to try out.
 
 # Project 3 (WIP)
+
+From the workspace menu, make a new workspace just for web development.  Keep your java work in one workspace, javascript in another.  
 
 Let's make a webpage.  First, download a shell script to make the process easier.
 > cd ~
