@@ -86,11 +86,7 @@ Let's make a webpage.  First, download a shell script to make the process easier
 
 > sed -i 's/\r/\n/g' buildapp.sh 
 
-Make sure it works by typing this:
-
-> buildapp.sh
-
-An explanation of what it does should pop up.  If it doesn't let me know.  Now let's see the magic of shell scripts.
+> npm install -g bower
 
 > cd ~
 
