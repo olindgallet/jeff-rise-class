@@ -51,6 +51,24 @@ If you use an operating system like Windows or ChromeOS, that's more computing p
 5.  So let's take a break and talk about the text editor.  The main thing you need to know is **ctrl + s**.  That will save your work.  Save often.  Ever play a video game, die, and lose progress?  Same thing happens in programming.  Save.  Save.  Save.
 
 6.  Time to write your first lines of code.  Start with the following:
-> print('Hello', person, '!');
+> print('Hello world!');
 
+Save, then go to your command line and type:
+> python3 helloworld.py
 
+What happens?
+
+As a side note, I will be teaching you Python3.  There's other versions of Python, but Python3 is the most up-to-date version.  If you want to try code you find on the Internet, be aware of this.
+
+7.  What you just did is known as **output**, or sending information to the user.  Taking in information is known as **input**.  Keep in mind that in complicated programs, the user might not even be a human -- input and output can happen between sensors, database readers, and other hardward and software parts.  So let's do input -- type in your code in the previous window as follows:
+
+> person = input('Enter your name: ');
+> print('Hello '+ person + '!');
+
+The first line means you are taking in input and assigning it to the person **variable**.  Like in algebra, a variable holds information and whereever that variable is, it gets replaced by that held information.  In this case, the information is your name.
+
+Note that the plus sign means you are **concatenating** your message.  That means putting it together.  See what happens!
+
+8.  Now that you understand output and input, try making a bot that has a basic conversation with you.  Have it ask your name, what your favorite color is, and another question of your choice.  Also, make it respond however you want.  Is it a serious bot?  Does it have jokes?  Your code, your freedom.
+
+Let me know how you like this lab too!
