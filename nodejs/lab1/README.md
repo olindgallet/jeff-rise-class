@@ -1,6 +1,6 @@
-**Understanding Cloud9, Linux, and how to get started with Python**
+**Understanding Cloud9, Linux, and how to get started with Javascript**
 
-Hello, for today's lab you will be familiarizing yourself with the C9 IDE, the Unix command line, and the start of programming with Python.  First, understand that Cloud9 is a cloud-based integrated development environment (IDE).  Let's break it down -- being cloud-based means that as long as you have your username and password, you can access Cloud9's services from any computer with an Internet connection.  If you want to experiment at home or the library, do so!  Integrated development environment is a place to write code and test programs.  It includes a text processor, a command line, and other features to make programming easier.
+Hello, for today's lab you will be familiarizing yourself with the C9 IDE, the Unix command line, and the start of programming with Javascript in Node.  First, understand that Cloud9 is a cloud-based integrated development environment (IDE).  Let's break it down -- being cloud-based means that as long as you have your username and password, you can access Cloud9's services from any computer with an Internet connection.  If you want to experiment at home or the library, do so!  Integrated development environment is a place to write code and test programs.  It includes a text processor, a command line, and other features to make programming easier.
 
 Now let's get started.
 
@@ -14,9 +14,9 @@ Since you're just starting out, you'll have an empty workspace.
 
 3.  Click "Create a New Workspace".  Fill it out as follows:
 
-- **Workspace Name** - Python
+- **Workspace Name** - nodejs
 
-- **Description** - Workspace for Python class
+- **Description** - Workspace for Node class
 
 - **Team** - Jeff Rise
 
@@ -24,7 +24,7 @@ Since you're just starting out, you'll have an empty workspace.
 
 - **Clone from Git or Mercurial URL** - (leave blank)
 
-- **Choose a Template** - Python
+- **Choose a Template** - Javascript
 
 After that, click "Create Workspace" and your workspace will be created.  In the background, a virtual machine is being made.  So why do you need a "computer inside a computer"?  Having a virtual machine means you can run multiple operating systems on one computer; keep in mind some programs only run on certain operating systems (or OSes).
 
@@ -44,28 +44,40 @@ If you use an operating system like Windows or ChromeOS, that's more computing p
 
 - **Third**, type in **cd helloworld**.  cd means "change directory", so you going into the directory you just made.
 
-- **Fourth**, type in **touch helloworld.py**, touch makes an empty file, so you make an empty file named helloworld.py.  All python files end with .py.  
+- **Fourth**, type in **touch helloworld.js**, touch makes an empty file, so you make an empty file named helloworld.js.  All Javascript and Node.js files end with .js.
 
-- **Fifth**, type in **c9 open helloworld.py**.  You should see a new tab pop up.  What you just did is open up helloworld.py in the text editor and now you can start writing code.
+- **Fifth**, type in **c9 open helloworld.js**.  You should see a new tab pop up.  What you just did is open up helloworld.js in the text editor and now you can start writing code.
 
 5.  So let's take a break and talk about the text editor.  The main thing you need to know is **ctrl + s**.  That will save your work.  Save often.  Ever play a video game, die, and lose progress?  Same thing happens in programming.  Save.  Save.  Save.
 
 6.  Time to write your first lines of code.  Start with the following:
-> print('Hello world!');
+> console.log('Hello world!');
 
 Save, then go to your command line and type:
-> python3 helloworld.py
+> node helloworld.js
 
 What happens?
 
-Note that most lines in Python end with a semicolor(;).  Typing in code has rules so that the computer can understand what you're trying to say; this is known as **syntax**.  Like how English sentences begin with a capital letter and end with a punctuation mark, code has its own set of rules.
+Note that most lines in Javascript end with a semicolor(;).  Typing in code has rules so that the computer can understand what you're trying to say; this is known as **syntax**.  Like how English sentences begin with a capital letter and end with a punctuation mark, code has its own set of rules.
 
-As a side note, I will be teaching you Python3.  There's other versions of Python, but Python3 is the most up-to-date version.  If you want to try code you find on the Internet, be aware of this.
+As a side note, I will be teaching you Node.  Javascript used to be used only in web browsers, but through node it can be used without one.  Be aware of this.
 
 7.  What you just did is known as **output**, or sending information to the user.  Taking in information is known as **input**.  Keep in mind that in complicated programs, the user might not even be a human -- input and output can happen between sensors, database readers, and other hardward and software parts.  So let's do input -- type in your code in the previous window as follows:
 
-> person = input('Enter your name: ');
-> print('Hello '+ person + '!');
+> const readline = require('readline');
+
+
+> const rl = readline.createInterface({
+>  input: process.stdin,
+>  output: process.stdout
+> });
+
+
+> rl.question('What do you think of Node.js? ', (answer) => {
+>  console.log(`Thank you for your valuable feedback: ${answer}`);
+
+>  rl.close();
+> });
 
 The first line means you are taking in input and assigning it to the person **variable**.  Like in algebra, a variable holds information and whereever that variable is, it gets replaced by that held information.  In this case, the information is your name.
 
