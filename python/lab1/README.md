@@ -58,6 +58,8 @@ Save, then go to your command line and type:
 
 What happens?
 
+Note that most lines in Python end with a semicolor(;).  Typing in code has rules so that the computer can understand what you're trying to say; this is known as **syntax**.  Like how English sentences begin with a capital letter and end with a punctuation mark, code has its own set of rules.
+
 As a side note, I will be teaching you Python3.  There's other versions of Python, but Python3 is the most up-to-date version.  If you want to try code you find on the Internet, be aware of this.
 
 7.  What you just did is known as **output**, or sending information to the user.  Taking in information is known as **input**.  Keep in mind that in complicated programs, the user might not even be a human -- input and output can happen between sensors, database readers, and other hardward and software parts.  So let's do input -- type in your code in the previous window as follows:
