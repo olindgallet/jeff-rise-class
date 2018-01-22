@@ -28,4 +28,24 @@ Since you're just starting out, you'll have an empty workspace.
 
 After that, click "Create Workspace" and your workspace will be created.  In the background, a virtual machine is being made.  So why do you need a "computer inside a computer"?  Having a virtual machine means you can run multiple operating systems on one computer; keep in mind some programs only run on certain operating systems (or OSes).
 
-4.  After your virtual machine gets created and finishes loading, you should see somehthing like this:
+4.  After your virtual machine gets created and finishes loading, you should see something like this:
+
+![c9interior](https://github.com/olindgallet/jeff-rise-class/blob/master/python/lab1/cloud9interior.png)
+
+Keep in mind I've been using this for a while, so mine will look a bit different.  Near the top-middle, look for a green plus.  Click that and select "Open New Terminal".
+
+What you now have is what's known as the **command line**.  From here, you can do different things like copy files, delete files, and download files.  The only thing that changes is how you do it.
+
+If you use an operating system like Windows or ChromeOS, that's more computing power that's needed to run those.  Unix, the operating system with this command line, takes up much less computer power that could be used for other things.
+
+- **First**, type in **ls**.  ls will list all files and directories in the current directory.  There shouldn't be much there right now.  So make a work directory (a directory is like a folder in Windows).
+
+- **Second**, type in **mkdir helloworld**.  mkdir means "make directory", so you are making a directory named helloworld.  How would you check to see if the directory was made?
+
+- **Third**, type in **cd helloworld**.  cd means "change directory", so you going into the directory you just made.
+
+- **Fourth**, type in **touch helloworld.py**, touch makes an empty file, so you make an empty file named helloworld.py.  All python files end with .py.  
+
+- **Fifth**, type in **c9 open helloworld.py**.  You should see a new tab pop up.  What you just did is open up helloworld.py in the text editor and now you can start writing code.
+
+5.
