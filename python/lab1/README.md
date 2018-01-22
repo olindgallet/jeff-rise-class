@@ -48,4 +48,9 @@ If you use an operating system like Windows or ChromeOS, that's more computing p
 
 - **Fifth**, type in **c9 open helloworld.py**.  You should see a new tab pop up.  What you just did is open up helloworld.py in the text editor and now you can start writing code.
 
-5.
+5.  So let's take a break and talk about the text editor.  The main thing you need to know is **ctrl + s**.  That will save your work.  Save often.  Ever play a video game, die, and lose progress?  Same thing happens in programming.  Save.  Save.  Save.
+
+6.  Time to write your first lines of code.  Start with the following:
+> print('Hello', person, '!');
+
+
