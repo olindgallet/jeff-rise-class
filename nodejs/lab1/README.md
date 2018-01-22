@@ -69,18 +69,18 @@ As a side note, I will be teaching you Node.  Javascript used to be used only in
 
 > const rl = readline.createInterface({
 
->  input: process.stdin,
+> &nbsp; &nbsp; input: process.stdin,
 
->  output: process.stdout
+> &nbsp; &nbsp; output: process.stdout
 
 > });
 
 
 > rl.question('What do you think of Node.js? ', (answer) => {
 
->  console.log(`Thank you for your valuable feedback: ${answer}`);
+> &nbsp; &nbsp; console.log(`Thank you for your valuable feedback: ${answer}`);
 
->  rl.close();
+> &nbsp; &nbsp; rl.close();
 
 > });
 
