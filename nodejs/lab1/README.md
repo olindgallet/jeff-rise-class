@@ -84,9 +84,11 @@ As a side note, I will be teaching you Node.  Javascript used to be used only in
 
 > });
 
-The first line means you are taking in input and assigning it to the person **variable**.  Like in algebra, a variable holds information and whereever that variable is, it gets replaced by that held information.  In this case, the information is your name.
+This is a lot of code.  First, look at the first line with **const readline**.  Nodejs has very limited capabilities, so if you need to do something that the basic language can't, you need to import a library (a library is some prewritten code).  Here the line is importing the library *readline* and has all functions from that library available.  This information is getting stored in a **const**ant variable since it won't change its values.
 
-Note that the plus sign means you are **concatenating** your message.  That means putting it together.  See what happens!
+The next few lines makes an rl object.  The std.in and std.out means standard input and output; in other words your keyboard and monitor.
+
+**rl.question** and other lines tell what happen
 
 8.  Now that you understand output and input, try making a bot that has a basic conversation with you.  Have it ask your name, what your favorite color is, and another question of your choice.  Also, make it respond however you want.  Is it a serious bot?  Does it have jokes?  Your code, your freedom.
 
