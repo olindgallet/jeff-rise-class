@@ -65,6 +65,7 @@ As a side note, I will be teaching you Python3.  There's other versions of Pytho
 7.  What you just did is known as **output**, or sending information to the user.  Taking in information is known as **input**.  Keep in mind that in complicated programs, the user might not even be a human -- input and output can happen between sensors, database readers, and other hardward and software parts.  So let's do input -- type in your code in the previous window as follows:
 
 > person = input('Enter your name: ');
+
 > print('Hello '+ person + '!');
 
 The first line means you are taking in input and assigning it to the person **variable**.  Like in algebra, a variable holds information and whereever that variable is, it gets replaced by that held information.  In this case, the information is your name.
