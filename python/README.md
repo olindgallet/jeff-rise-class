@@ -11,3 +11,7 @@ __Goals__
 - Apply knowledge to solve relevant real world problems.
 
 - Make the skills you learn in other classes important outside the classroom.
+
+__Labs__
+
+- **Lab 1** - Understanding Cloud9, Linux, and how to get started with Python
