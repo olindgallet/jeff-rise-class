@@ -4,8 +4,10 @@ Hello, welcome to NOLA CODE's Python portion of the class.  Python is a programm
 
 __Goals__
 
-- Understand the fundamentals of programming through Python
+- Understand the fundamentals of programming through Python.
 
-- Decompose complicated problems into smaller problems, solve those problems, then combine those for the original solution
+- Decompose complicated problems into smaller problems, solve those problems, then combine those for the original solution.
 
 - Apply knowledge to solve relevant real world problems.
+
+- Make the skills you learn in other classes important outside the classroom.
