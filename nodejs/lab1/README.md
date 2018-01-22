@@ -78,7 +78,7 @@ As a side note, I will be teaching you Node.  Javascript used to be used only in
 
 > rl.question('What do you think of Node.js? ', (answer) => {
 
-> &nbsp; &nbsp; console.log(`Thank you for your valuable feedback: ${answer}`);
+> &nbsp; &nbsp; console.log('Thank you for your valuable feedback: ${answer}');
 
 > &nbsp; &nbsp; rl.close();
 
@@ -88,7 +88,7 @@ This is a lot of code.  First, look at the first line with **const readline**.  
 
 The next few lines makes an rl object.  The std.in and std.out means standard input and output; in other words your keyboard and monitor.
 
-**rl.question** and other lines tell what happen
+**rl.question** and other lines tell what happens after it asks a questions.  **(answer)** => and so on is called a **callback function**.  Callbacks are functions that happen after the outer function is done.  Callback functions can have callback function and those can callback functions *near inifinitely*.
 
 8.  Now that you understand output and input, try making a bot that has a basic conversation with you.  Have it ask your name, what your favorite color is, and another question of your choice.  Also, make it respond however you want.  Is it a serious bot?  Does it have jokes?  Your code, your freedom.
 
