@@ -7,3 +7,20 @@ Hello, for today's lab you will be familiarizing yourself with the C9 IDE, the *
 2. Once you're logged in, you should see something like this:
 
 ![workspaces](https://github.com/olindgallet/jeff-rise-class/blob/master/python/lab1/c9workspaces.png)
+
+Since you're just starting out, you'll have an empty workspace.  
+
+3.  Click "Create a New Workspace".  Fill it out as follows:
+
+- ** Workspace Name ** - Python
+
+- ** Description ** - Workspace for Python class
+
+- ** Team ** - Jeff Rise
+
+- ** Hosted Workspace ** - Public
+
+- ** Clone from Git or Mercurial URL ** - (leave blank)
+
+- ** Choose a Template ** - Python
+
