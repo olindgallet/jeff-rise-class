@@ -68,15 +68,20 @@ As a side note, I will be teaching you Node.  Javascript used to be used only in
 
 
 > const rl = readline.createInterface({
+
 >  input: process.stdin,
+
 >  output: process.stdout
+
 > });
 
 
 > rl.question('What do you think of Node.js? ', (answer) => {
+
 >  console.log(`Thank you for your valuable feedback: ${answer}`);
 
 >  rl.close();
+
 > });
 
 The first line means you are taking in input and assigning it to the person **variable**.  Like in algebra, a variable holds information and whereever that variable is, it gets replaced by that held information.  In this case, the information is your name.
