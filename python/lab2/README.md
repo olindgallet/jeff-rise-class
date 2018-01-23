@@ -1,6 +1,6 @@
-**Understanding Cloud9, Linux, and how to get started with Python**
+**Understanding Conditional Statements**
 
-Hello, for today's lab you will be familiarizing yourself with the C9 IDE, the Unix command line, and the start of programming with Python.  First, understand that Cloud9 is a cloud-based integrated development environment (IDE).  Let's break it down -- being cloud-based means that as long as you have your username and password, you can access Cloud9's services from any computer with an Internet connection.  If you want to experiment at home or the library, do so!  Integrated development environment is a place to write code and test programs.  It includes a text processor, a command line, and other features to make programming easier.
+Hello, for today's lab you will be familiarizing yourself with conditional statements
 
 Now let's get started.
 
