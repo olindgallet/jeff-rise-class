@@ -15,7 +15,8 @@
 7. Computer
 
 **Steps**
-First, set up a breadboard as follows
+
+*First*, set up a breadboard as follows:
 
 1. Connect a wire from the 5v socket of the Arduino to the red rail of the breadboard.
 2. Connect a wire from the red rail to an empty row in the middle of the breadboard.
@@ -29,7 +30,7 @@ If everything is set up okay, your LED should light up.
 
 (Teacher notes: Stress the flow of electricity.  Start with power coming from the computer, going through the Arduino, and continuing through the light until it goes back to the Arduino.  And it's okay to mess up.  Just be able to explain why things didn't work.)
 
-Second, take the wire coming from the red rail of the breadboard out of the 5v socket and put it in the 13 socket.
+*Second*, take the wire coming from the red rail of the breadboard out of the 5v socket and put it in the 13 socket.
 
 Copy and paste this program into whatever you use to upload code to the Arduino and upload it.
 https://gist.github.com/brooksware2000/3297002
