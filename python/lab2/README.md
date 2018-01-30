@@ -35,7 +35,7 @@ For reference, here is a diagram to refresh your memory:
 a > b - a is *greater than* b
 
 a < b - a is *less than* b
-ou'
+
 a <= b - a is *less than or equal* to b
 
 a >= b - a is *greater than or equal* to b
@@ -68,4 +68,24 @@ So now that the computer can roll a die for you, what can you do with it?
 
 8.  Go back to `conditional.py`.  After the lines you typed, start your conditional structure as follows:
 ```
-if random 
+if number % 2 == 0:
+    print("It is even");
+else:
+    print("It is odd");
+```
+The `%` symbol in Python means modulo, or the remainder.  It divides the first number by the second number and gives the remainder.  In the code, you are taking the value of the die rolled, dividing it by 2, and getting either2 1 or 0.  Check out this chart:
+
+**2 % 2** = 0
+
+**3 % 2** = 1
+
+**4 % 2** = 0
+
+**5 % 2** = 1
+
+**6 % 2** = 0
+
+*and so on. . .do you see the pattern?*
+
+That's right, odd numbers have a remainder of 1.  Even numbers have a remainder of 0.
+
