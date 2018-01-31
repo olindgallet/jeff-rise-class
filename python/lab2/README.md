@@ -1,6 +1,6 @@
 **Understanding Conditional Statements**
 
-Hello, for today's lab you will be familiarizing yourself with conditional statements.  Conditional statements are used to take action depending if a statement is true or false.
+Hello, for today's lab you will be familiarizing yourself with conditional statements and Boolean logic.  **Boolean statements** are either true or false.  **Conditional statements** are used to take action depending if a statement is true or false.
 
 For example, consider a stoplight.  What should a car normally do if the driver sees a red light?  What about a green light?
 
@@ -89,3 +89,17 @@ The `%` symbol in Python means modulo, or the remainder.  It divides the first n
 
 That's right, odd numbers have a remainder of 1.  Even numbers have a remainder of 0.
 
+9.  Let's take a quick look at and, or, and not.
+
+Copy and paste this code at the end of your code.
+```
+number2 = random.randint(0, 6);
+print('Is number 1 even and number 2 even? ');
+print(number1 % 2 == 0 and number2 % 2 == 0);
+print('Is number 1 even or number 2 even? ');
+print(number1 % 2 == 0 or number2 % 2 == 0);
+print('Is number 1 not even?');
+print(not(number1 % 2 == 0));
+```
+
+What do you get?  
