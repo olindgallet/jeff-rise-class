@@ -91,9 +91,14 @@ That's right, odd numbers have a remainder of 1.  Even numbers have a remainder 
 
 9.  Let's take a quick look at and, or, and not.
 
-Copy and paste this code at the end of your code.
+Copy and paste this code (it's ok if you write over everything, or you can make a new file).
 ```
-number2 = random.randint(0, 6);
+import random;
+
+number1 = random.randint(0, 6);
+
+print(str(number1) + " is number 1");
+print(str(number2) +  "is number 2");
 print('Is number 1 even and number 2 even? ');
 print(number1 % 2 == 0 and number2 % 2 == 0);
 print('Is number 1 even or number 2 even? ');
@@ -101,5 +106,12 @@ print(number1 % 2 == 0 or number2 % 2 == 0);
 print('Is number 1 not even?');
 print(not(number1 % 2 == 0));
 ```
+The one thing that may look unfamiliar to you is `str`.  `str` means to change the data type.  Data types are important in programming languages because they tell how much memory in the program to use.   `str` means the String datatype which is any alphanumeric character and various symbols like periods, commas, etc.  You'll see it quite often when taking in user input.  
 
-What do you get?  
+I also intentionally left an error in the code.  One of the things you have to learn when coding is how to *debug*, or take in information about an error and use that information to solve it.  Note that some bugs, or errors, also occur without the computer complaining at all.  The key is to test your code -- you want to catch those errors before people using your code does.
+
+Ever have a game crash while playing it?  Worst feeling in the world.
+
+So try it out, see what error you get, and fix your error.  See if there's a pattern in your code that you can complete and fix it.
+__
+After that you have a bit of free time to experiment :).
