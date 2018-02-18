@@ -15,3 +15,7 @@ __Goals__
 __Labs__
 
 - **Lab 1** - Understanding Cloud9, Linux, and how to get started with Python
+
+- **Lab 2** - Boolean logic, conditional statements, randomness, libraries, debugging
+
+- **Lab 3** - Repetition through for and while loops, calling/writing functions
