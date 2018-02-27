@@ -30,6 +30,7 @@ Realize this.  Elements can hold any type of data whether it be numbers, letters
 Now look at this.  Suppose you want to add something to the end of a list.
 
 ```list = [];```
+
 ```list.append('end');```
 
 ```append``` adds the element to the end of the list.  In this case, the word `end` is added to this list.
