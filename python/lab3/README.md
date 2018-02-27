@@ -1,118 +1,75 @@
 
-**Understanding Conditional Statements**
+**Understanding Lists and Repetition Part 1**
 
-Hello, for today's lab you will be familiarizing yourself with conditional statements and Boolean logic.  **Boolean statements** are either true or false.  **Conditional statements** are used to take action depending if a statement is true or false.
+Hello, for today's lab this is what I want you to take away:
+- ** A fundamental understanding of lists **
+- ** The start of understanding repetition **
+- ** How repetition can be used to work with lists **
+- ** Consideration of the flow of a program **
 
-For example, consider a stoplight.  What should a car normally do if the driver sees a red light?  What about a green light?
+So for this lab I'm going to put more coding because I want you to see the code in action.  I can keep talking about the code, but you won't be seeing it.  You won't be feeling the words escape your fingers and appear on the screen.  I stress that if you understand the code, you understand the quizzes.  
 
-In the driver's head:
-```
-if light is red
+Now, lists.  Lists are a **data structure** that holds its items one after another.  Lists are important since they can hold related data such as usernames.  
 
-  then stop
-  
-else if light is green
+Think of lists as cubbyholes, items one after another:
 
-  then go
-```
-Now here's the code in Python:
-```
-if light == 'red':
+| ITEM 1 | ITEM 2 | ITEM 3 | ITEM 4 |
 
-  print('Stop!');
-  
-elif light == 'green':
+Note that lists are **finite**, meaning that they have a defined size.  A computer needs to know how much memory to make available for the these lists.  Note that lists can grow as big as the computer can allow.
 
-  print('Go!');
-````
-There are a couple of things I want you to notice about the code.
+This is how you make an empty list in Python:
 
-* **First**, notice how every comparison begins with `if` or `elif`.  `elif` means 'else if'.  There is also an `else`.  All conditional structures begin at `if` and follow zero or more `elif`s and at most 1 `else`.  The way to start a conditional statement is `(if|elif|else) [condition]:`.
+```list = [];```
 
-* **Second**, more about conditions.  Condtions either are true or false -- there is no inbetween.  Most conditionals you will use in this class are comparisons between two like objects.  For example, is 1 > 2?  Is 9 > 0?
+The '[]' symbols mean the beginning and the end of a list.  You can also make a list with elements as follows:
 
-For reference, here is a diagram to refresh your memory:
+```list = ['a', 'b', 'c'];```
 
-a > b - a is *greater than* b
+Realize this.  Elements can hold any type of data whether it be numbers, letters, etc.  As long as the data inside a list is of the same type, then it's ok.
 
-a < b - a is *less than* b
+Now look at this.  Suppose you want to add something to the end of a list.
 
-a <= b - a is *less than or equal* to b
+```list = [];```
+```list.append('end');```
 
-a >= b - a is *greater than or equal* to b
+```append``` adds the element to the end of the list.  In this case, the word `end` is added to this list.
 
-a == b - a is *equal to b* (note this is different in programming since one = means assigning a value to a variable
-
-* **Third**, note that the condition ends with a colon (or : ).  The colon means that every line that's tabbed over following this condition will execute if the condition is true.  Every line that needs to be executed if the statement is true is tabbed over.
-
-Try it out!
-1.  Log into C9.
-2.  Go to your Python workspace.
-3.  From the terminal, type in `mkdir conditionals`
-4.  Then type in `cd conditionals`.
-5.  Then type in `touch conditional.py`.
-6.  Then type in `c9 open conditional.py`.
-7.  Type in the following:
-```
-import random;
-number = random.randint(0, 6);
-print(number);
-```
-
-There's a lot going on here.  First, `import random` means that you're taking some already-written code and including it into yours.  This already-written code, or library, is something programmers write to save time on future projects.  In this case, random is a library for random-number generation.
-
-Now that the library is imported, you can start using its code.  `random.randint` takes in two numbers and returns a number greater than the first number and less than or equal to the second number.  The code will print out a number between 1 and 6.
-
-Save your code (ctrl+s) then go to the command line, type `python3 conditional.py`, then press Enter.  Repeat it a few times by pressing up and press Enter and see if you can get different numbers.
-
-So now that the computer can roll a die for you, what can you do with it?
-
-8.  Go back to `conditional.py`.  After the lines you typed, start your conditional structure as follows:
-```
-if number % 2 == 0:
-    print("It is even");
-else:
-    print("It is odd");
-```
-The `%` symbol in Python means modulo, or the remainder.  It divides the first number by the second number and gives the remainder.  In the code, you are taking the value of the die rolled, dividing it by 2, and getting either2 1 or 0.  Check out this chart:
-
-**2 % 2** = 0
-
-**3 % 2** = 1
-
-**4 % 2** = 0
-
-**5 % 2** = 1
-
-**6 % 2** = 0
-
-*and so on. . .do you see the pattern?*
-
-That's right, odd numbers have a remainder of 1.  Even numbers have a remainder of 0.
-
-9.  Let's take a quick look at and, or, and not.
-
-Copy and paste this code (it's ok if you write over everything, or you can make a new file).
+Now get your C9 ready and your editor ready because I want you to type in this part:
 ```
 import random;
 
-number1 = random.randint(0, 6);
+numbers = [];
 
-print(str(number1) + " is number 1");
-print(str(number2) +  "is number 2");
-print('Is number 1 even and number 2 even? ');
-print(number1 % 2 == 0 and number2 % 2 == 0);
-print('Is number 1 even or number 2 even? ');
-print(number1 % 2 == 0 or number2 % 2 == 0);
-print('Is number 1 not even?');
-print(not(number1 % 2 == 0));
+for i in range(0, 10):
+    numbers.append(random.randint(1, 6));
+
+print(numbers);
 ```
-The one thing that may look unfamiliar to you is `str`.  `str` means to change the data type.  Data types are important in programming languages because they tell how much memory in the program to use.   `str` means the String datatype which is any alphanumeric character and various symbols like periods, commas, etc.  You'll see it quite often when taking in user input.  
 
-I also intentionally left an error in the code.  One of the things you have to learn when coding is how to *debug*, or take in information about an error and use that information to solve it.  Note that some bugs, or errors, also occur without the computer complaining at all.  The key is to test your code -- you want to catch those errors before people using your code does.
+Save it and run it on the terminal.  What gets displayed?  **Also note, randint needs a 1 at the beginning because when I put 0, sometimes I get 0.  This is why I always stress testing your code.  I also messed up in telling you that a 0 needs to be there.**
 
-Ever have a game crash while playing it?  Worst feeling in the world.
+What you have is a list of 10 numbers created from rolling a die 10 times.  You're seeing a new construct called the for loop here.  A for loop can be used to repeat things.  ```range``` makes a list of numbers from 0 to 9, or the first number to the second number - 1.  When the for loop runs, the loop will repeat for each element of that list.  In other words, the list will run for 0, 1, 2, 3 and so on until it ends at 9.
 
-So try it out, see what error you get, and fix your error.  See if there's a pattern in your code that you can complete and fix it.
-__
-After that you have a bit of free time to experiment :).
+Save the program, run the program.  What shows up?
+
+You have a list of random numbers now.  Here's something you can try with random numbers:
+
+```
+import random;
+
+numbers = [];
+
+for i in range(0, 10):
+    numbers.append(random.randint(1, 6));
+
+print(numbers);
+
+for i in numbers:
+    if i % 2 == 0:
+        print('The number ' + str(i) + ' is even.');
+    else: 
+        print('The number ' + str(i) + ' is odd.');
+```
+
+There's two things I want you to pay attention to here.  First, for loops and if statements can appear inside each other.  In Python, indentation helps organize the information.  As structures start going inside other structures, pay attention to the indentation.  Second, for loops are used to go through each element of a list.  In the first for loop, the loop goes through a list of 0 - 9 made from the range statement.  In the second for loop, it goes through each element of the numbers list.  The numbers list holds 10 randomly generated numbers from 1 to 6.
+
