@@ -74,3 +74,6 @@ for i in numbers:
 
 There's two things I want you to pay attention to here.  First, for loops and if statements can appear inside each other.  In Python, indentation helps organize the information.  As structures start going inside other structures, pay attention to the indentation.  Second, for loops are used to go through each element of a list.  In the first for loop, the loop goes through a list of 0 - 9 made from the range statement.  In the second for loop, it goes through each element of the numbers list.  The numbers list holds 10 randomly generated numbers from 1 to 6.
 
+**Your turn:**
+
+I want you to make a list that holds the results of 10 coin flips.  Then, report whether each of those coin flips were heads and which ones were tails.  Use the die rolling program from the previous example as a guide.
