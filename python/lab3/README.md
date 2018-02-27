@@ -2,10 +2,10 @@
 **Understanding Lists and Repetition Part 1**
 
 Hello, for today's lab this is what I want you to take away:
-- **A fundamental understanding of lists **
-- **The start of understanding repetition **
-- **How repetition can be used to work with lists **
-- **Consideration of the flow of a program **
+- **A fundamental understanding of lists**
+- **The start of understanding repetition**
+- **How repetition can be used to work with lists**
+- **Consideration of the flow of a program**
 
 So for this lab I'm going to put more coding because I want you to see the code in action.  I can keep talking about the code, but you won't be seeing it.  You won't be feeling the words escape your fingers and appear on the screen.  I stress that if you understand the code, you understand the quizzes.  
 
