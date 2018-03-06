@@ -50,10 +50,12 @@ What you now have is what's known as the **command line**.  From here, you can d
 
 6.  Time to write your lines of code.  You can use copy (ctrl + C) and paste (ctrl + V) to put this code into the editor.  Start with the following:
 
-> i = 0;
-> while i < 10:
->    print(i);
->    i = i + 1;
+```
+i = 0;
+while i < 10:
+    print(i);
+    i = i + 1;
+```
 
 Save, then go to your command line and type:
 
@@ -67,15 +69,16 @@ As for the code:
 
 Now let's compare it to a for loop.  Copy and paste this new code, erasing the old code and run it.  What do you see?
 
-> print('** while loop **');
+```
+print('** while loop **');
 
-> i = 0;
-> while i < 10:
->     print(i);
->     i = i + 1;
+i = 0;
+while i < 10:
+    print(i);
+    i = i + 1;
 
-> print('** for loop **');
+print('** for loop **');
     
-> for i in range(0, 10):
->     print(i);
-
+for i in range(0, 10):
+    print(i);
+```
