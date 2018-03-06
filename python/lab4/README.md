@@ -61,7 +61,7 @@ Save, then go to your command line and type:
 
 > python3 whileloops.py
 
-What happens?  If it didn't work, pay attention to your indentation.  All code that gets executed in a while loop is separated by indentation.
+What happens?  If it didn't work, pay attention to your indentation.  All code that gets executed in a while loop is separated by indentation.  For future reference, when I say "run the program", that means typing this command in the terminal.
 
 As for the code:
 - ** i = 0 ** sets up the counter.  The counter is used to keep track of how many times the loop runs.  Unlike a for loop, a counter must be manually changed.
@@ -82,3 +82,48 @@ print('** for loop **');
 for i in range(0, 10):
     print(i);
 ```
+
+You should see the same thing.  For loops and while loops can be used for many of the same jobs, but there are times when it is better to use one or the other.  Here's an example, type it in and see what happens:
+
+```
+i = 10;
+while i > 0:
+    print(i);
+    i = i - 1;    
+```
+
+You can use while loops to go backwards.  Now try this:
+
+```
+i = 0;
+while i < 10:
+    print(i);
+    i = i + 2;
+```
+
+And now this:
+
+```
+import random;
+print ('Game will end when you roll a 6.');
+die = 0;
+while die != 6:
+    die = random.randint(1, 6);
+    print('You rolled a ' + str(die) + '.');
+print('Game complete.');
+```
+
+Try that game for a few times.  Key thing is to notice that it doesn't need a counter -- the loop continues until a condition is met.  You can use a while loop like this in for example menu; keep showing the menu until the user selects a menu option shown.
+
+This is what I want you to take away:
+
+- **While loops** - While loops show repetition like for loops.  However, unlike for loops they must meet a certain condition to keep going.  For loops are used to go over each element of a list (remember range(0, 10) makes a list also even though it looks like you're counting up).
+
+- **Be able to differentiate when to use a for loop and a while loop**
+
+- **Use conditionals to say when a while loop starts and ends**
+
+__
+**On your own**
+
+Try adding up all the even numbers from 1 to 100.  Print out the answer at the end.  There are many ways to do this, so trust in your programming skill.  
